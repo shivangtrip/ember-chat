@@ -9,4 +9,9 @@ export default Ember.Component.extend({
     text: Ember.computed('message.text', function() {
         return he.decode(this.get('message').text);
     }),
+    actions: {
+        scrollHere(item){
+            console.log(item);
+        }
+    }
 });
