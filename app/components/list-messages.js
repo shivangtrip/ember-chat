@@ -39,7 +39,7 @@ export default Ember.Component.extend({
                   const username = this.get('activeUserService').get('user');
                   const time = new Date();
 
-                  axios.post('http://localhost:3000/messages', { text, username, time });
+                  axios.post('https://morning-atoll-69322.herokuapp.com/messages', { text, username, time });
                   this.set('newMessage', '');
               }
           }
